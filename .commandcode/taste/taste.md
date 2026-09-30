@@ -1,0 +1,1 @@
+- Prefers images/backgrounds implemented simply (e.g. a CSS background with `bg-cover`) with the whole image visible, rather than cropped or covered by overlay elements. Confidence: 0.4

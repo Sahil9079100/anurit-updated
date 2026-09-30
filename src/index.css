@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: "Pixelify Sans:Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://static.figma.com/font/PixelifySans_wght__1") format("woff2");
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans:Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://static.figma.com/font/PlusJakartaSans_wght__2") format("woff2");
+}

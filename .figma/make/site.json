@@ -1,0 +1,10 @@
+{
+  "description": "Transform design mockups into high-quality HTML and CSS code, streamlining the development process for designers and developers alike.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
