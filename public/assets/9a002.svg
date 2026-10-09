@@ -1,17 +1,16 @@
 <svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="1122.52" height="738.115" viewBox="0 0 1122.52 738.115" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Frame 10" filter="url(#filter0_f_0_33)">
 <g id="Vector 4">
-<path d="M85.5 85.5905V609.09L1037 652.59L1016.5 85.5905H924L840 289.59L772 228.59L711 439.59H568L416 258.09L352.5 289.59L289 119.59L85.5 85.5905Z" fill="#3E20C0"/>
-<path d="M85.5 85.5905V609.09L1037 652.59L1016.5 85.5905H924L840 289.59L772 228.59L711 439.59H568L416 258.09L352.5 289.59L289 119.59L85.5 85.5905Z" fill="#3E20C0"/>
-<path d="M85.5 85.5905V609.09L1037 652.59L1016.5 85.5905H924L840 289.59L772 228.59L711 439.59H568L416 258.09L352.5 289.59L289 119.59L85.5 85.5905Z" fill="#3E20C0"/>
-<path d="M85.5 85.5905V609.09L1037 652.59L1016.5 85.5905H924L840 289.59L772 228.59L711 439.59H568L416 258.09L352.5 289.59L289 119.59L85.5 85.5905Z" stroke="white"/>
+<path d="M85.5 85.5905V609.09L1037 652.59L1016.5 85.5905H924L840 289.59L772 228.59L711 439.59H568L416 258.09L352.5 289.59L289 119.59L85.5 85.5905Z" fill="#3E20C0" fill-opacity="0.2"/>
+<path d="M85.5 85.5905V609.09L1037 652.59L1016.5 85.5905H924L840 289.59L772 228.59L711 439.59H568L416 258.09L352.5 289.59L289 119.59L85.5 85.5905Z" fill="#3E20C0" fill-opacity="0.2"/>
+<path d="M85.5 85.5905V609.09L1037 652.59L1016.5 85.5905H924L840 289.59L772 228.59L711 439.59H568L416 258.09L352.5 289.59L289 119.59L85.5 85.5905Z" fill="#3E20C0" fill-opacity="0.2"/>
 </g>
 </g>
 <defs>
 <filter id="filter0_f_0_33" x="0" y="7.15256e-07" width="1122.52" height="738.115" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="42.5" result="effect1_foregroundBlur_0_33"/>
+<feGaussianBlur stdDeviation="140" result="effect1_foregroundBlur_0_33"/>
 </filter>
 </defs>
 </svg>

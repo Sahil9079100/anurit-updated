@@ -14,6 +14,10 @@
   src: url("https://static.figma.com/font/PlusJakartaSans_wght__2") format("woff2");
 }
 
+body {
+  background-color: #FEFFFC;
+}
+
 html,
 body {
   scrollbar-width: none;
@@ -24,3 +28,4 @@ html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;
 }
+

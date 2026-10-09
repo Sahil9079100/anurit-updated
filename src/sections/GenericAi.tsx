@@ -1,8 +1,8 @@
-import { imgImage9 } from "../assets";
+import { imgImage9 } from "../assets"
 
 export default function GenericAi() {
   return (
-    <section className="max-w-[1440px] mx-auto px-8 lg:px-[89px] py-16 lg:py-24">
+    <section className="max-w-[1600px] mx-auto px-4 lg:px-[24px] py-16 lg:py-24">
       <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 items-center">
         <div className="flex-shrink-0 w-full lg:w-[683px] h-[427px] relative">
           <img alt="" className="w-full h-full object-cover" src={imgImage9} />
@@ -17,5 +17,5 @@ export default function GenericAi() {
         </div>
       </div>
     </section>
-  );
+  )
 }

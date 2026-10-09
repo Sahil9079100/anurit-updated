@@ -1,4 +1,4 @@
-import ServiceCard from "../components/ServiceCard";
+import ServiceCard from "../components/ServiceCard"
 import {
   imgVector1,
   imgVector2,
@@ -18,18 +18,18 @@ import {
   imgVector16,
   imgVector17,
   imgVector18,
-} from "../assets";
+} from "../assets"
 
 export default function WhatWeBuild() {
   return (
-    <section className="max-w-[1440px] mx-auto px-8 lg:px-[89px] py-16">
+    <section className="max-w-[1600px] mx-auto px-4 lg:px-[24px] py-16">
       <p className="font-['Pixelify_Sans:Regular'] font-normal text-[36px] text-black text-center mb-2">
         WHAT WE BUILD
       </p>
       <p className="font-['Plus_Jakarta_Sans:Regular'] font-normal text-[18px] text-[#474444] text-center mb-10">
         From raw data to intelligent systems
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1320px] mx-auto">
         <ServiceCard
           title="Analytics"
           description="Turn property data into decisions."
@@ -74,5 +74,5 @@ export default function WhatWeBuild() {
         />
       </div>
     </section>
-  );
+  )
 }
