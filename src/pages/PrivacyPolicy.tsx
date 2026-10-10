@@ -1,7 +1,8 @@
 import LegalPage, { LegalBody, LegalList, LegalSection } from "../components/LegalPage"
 
+import { company } from "../data/company"
+
 const LAST_UPDATED = "October 10, 2026"
-const CONTACT_EMAIL = "amrit@anuritinnovation.com"
 
 export default function PrivacyPolicy() {
   return (
@@ -87,12 +88,28 @@ export default function PrivacyPolicy() {
         <p>If you have any questions regarding our privacy policy, please contact us at:</p>
         <p>
           <a
-            href={`mailto:${CONTACT_EMAIL}`}
+            href={`mailto:${company.email}`}
             className="text-black underline decoration-black/20 underline-offset-4 transition-colors duration-200 hover:decoration-black"
           >
-            {CONTACT_EMAIL}
+            {company.email}
           </a>
         </p>
+        <p>
+          Phone:{" "}
+          <a
+            href={company.phoneHref}
+            className="text-black underline decoration-black/20 underline-offset-4 transition-colors duration-200 hover:decoration-black"
+          >
+            {company.phone}
+          </a>
+        </p>
+        <address className="not-italic">
+          {company.address.map((line) => (
+            <span key={line} className="block">
+              {line}
+            </span>
+          ))}
+        </address>
       </LegalSection>
     </LegalPage>
   )

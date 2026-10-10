@@ -1,6 +1,7 @@
 import ContactForm from "../components/ContactForm"
 import Navbar from "../components/Navbar"
 import Footer from "../sections/Footer"
+import { company } from "../data/company"
 
 const socialLinks = [
   { label: "LinkedIn", href: "https://www.linkedin.com/" },
@@ -30,14 +31,30 @@ export default function ContactPage() {
               <div>
                 <dt className="text-[13px] uppercase tracking-[0.18em] text-black/40">Email</dt>
                 <dd className="mt-1 text-[18px] text-[#2c2c2c]">
-                  <a href="mailto:hello@anurit.com" className="transition-colors hover:text-black">
-                    hello@anurit.com
+                  <a href={`mailto:${company.email}`} className="transition-colors hover:text-black">
+                    {company.email}
                   </a>
                 </dd>
               </div>
               <div>
-                <dt className="text-[13px] uppercase tracking-[0.18em] text-black/40">Location</dt>
-                <dd className="mt-1 text-[18px] text-[#2c2c2c]">Jaipur, Rajasthan, India</dd>
+                <dt className="text-[13px] uppercase tracking-[0.18em] text-black/40">Phone</dt>
+                <dd className="mt-1 text-[18px] text-[#2c2c2c]">
+                  <a href={company.phoneHref} className="transition-colors hover:text-black">
+                    {company.phone}
+                  </a>
+                </dd>
+              </div>
+              <div>
+                <dt className="text-[13px] uppercase tracking-[0.18em] text-black/40">Address</dt>
+                <dd className="mt-1 text-[18px] leading-relaxed text-[#2c2c2c]">
+                  <address className="not-italic">
+                    {company.address.map((line) => (
+                      <span key={line} className="block">
+                        {line}
+                      </span>
+                    ))}
+                  </address>
+                </dd>
               </div>
             </dl>
 
