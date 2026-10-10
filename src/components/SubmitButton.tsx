@@ -18,7 +18,7 @@ export default function SubmitButton({ status = "idle" }: SubmitButtonProps) {
       type="submit"
       disabled={status === "submitting"}
       aria-busy={status === "submitting"}
-      className="relative bg-black rounded-[8px] overflow-hidden w-[355px] h-[52px] flex items-center cursor-pointer disabled:cursor-progress"
+      className="relative bg-black rounded-[8px] overflow-hidden w-[355px] max-w-full h-[52px] flex items-center cursor-pointer disabled:cursor-progress"
     >
       <div
         className="absolute flex items-center justify-center pointer-events-none overflow-hidden"

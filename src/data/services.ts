@@ -1,0 +1,121 @@
+export interface Service {
+  slug: string
+  title: string
+  tagline: string
+  capabilities: string[]
+  /** Tailwind gradient classes: darker at the bottom, where the text sits. */
+  gradient: string
+}
+
+export const services: Service[] = [
+  {
+    slug: "real-estate-analytics-bi",
+    title: "Real Estate Analytics & BI",
+    tagline: "Turn property data into decisions.",
+    capabilities: [
+      "Multifamily Performance Analytics",
+      "Property & Portfolio Dashboards",
+      "Occupancy & Leasing Analytics",
+      "Revenue & NOI Analytics",
+      "Budget vs Actual",
+      "Variance Analysis",
+      "Concessions & Bad Debt Analytics",
+      "Executive & Investor Reporting",
+      "Asset Management Analytics",
+      "Custom Power BI Reporting",
+    ],
+    gradient: "bg-linear-to-t from-[#1e3a8a] to-[#6366f1]",
+  },
+  {
+    slug: "data-engineering-cloud",
+    title: "Data Engineering & Cloud",
+    tagline: "Build a reliable data foundation for your business.",
+    capabilities: [
+      "Data Warehouse & Lakehouse",
+      "Azure Data Engineering",
+      "Microsoft Fabric",
+      "SQL Database Architecture",
+      "ETL / ELT Pipelines",
+      "Yardi Data Integration",
+      "API & Third-Party Integrations",
+      "Data Transformation & Modeling",
+      "Data Quality & Validation",
+      "Cloud Migration",
+      "Automated Data Pipelines",
+    ],
+    gradient: "bg-linear-to-t from-[#0f4c5c] to-[#0891b2]",
+  },
+  {
+    slug: "ai-intelligent-automation",
+    title: "AI & Intelligent Automation",
+    tagline: "Move from reporting what happened to understanding what happens next.",
+    capabilities: [
+      "Custom AI Agents",
+      "RAG-based Enterprise Chatbots",
+      "Ask Your Data",
+      "AI-powered Document Intelligence",
+      "Predictive Analytics",
+      "Anomaly Detection",
+      "Automated Insights",
+      "Workflow Automation",
+      "Private / Secure LLM Solutions",
+      "AI Integration with Enterprise Data",
+    ],
+    gradient: "bg-linear-to-t from-[#5b21b6] to-[#c026d3]",
+  },
+  {
+    slug: "power-bi-custom-analytics",
+    title: "Power BI & Custom Analytics",
+    tagline: "Power BI built around the way your business actually works.",
+    capabilities: [
+      "Power BI Dashboard Development",
+      "Advanced DAX Development",
+      "Financial Reporting",
+      "Paginated Reports / PBRS",
+      "Power BI Performance Optimization",
+      "Semantic Models",
+      "Dynamic Measures & Navigation",
+      "Row-Level Security",
+      "Power BI Embedded",
+      "Custom Power BI Visuals",
+      "AppSource-ready Visual Development",
+    ],
+    gradient: "bg-linear-to-t from-[#7c2d12] to-[#d97706]",
+  },
+  {
+    slug: "custom-software-digital-products",
+    title: "Custom Software & Digital Products",
+    tagline: "From business idea to production-ready product.",
+    capabilities: [
+      "SaaS Platforms",
+      "Web Applications",
+      "Internal Business Applications",
+      "Data-driven Applications",
+      "Customer Portals",
+      "APIs & Integrations",
+      "MVP Development",
+      "Product Modernization",
+      "Workflow Applications",
+      "Custom Business Tools",
+    ],
+    gradient: "bg-linear-to-t from-[#9f1239] to-[#fb7185]",
+  },
+  {
+    slug: "managed-data-analytics-services",
+    title: "Managed Data & Analytics Services",
+    tagline: "Your data team, without the overhead.",
+    capabilities: [
+      "Power BI Support",
+      "Dashboard Maintenance",
+      "Data Pipeline Monitoring",
+      "Report Enhancements",
+      "Data Quality Monitoring",
+      "Cloud Infrastructure Support",
+      "Performance Optimization",
+      "Ongoing Development",
+      "Analytics Team Augmentation",
+      "24/7 Monitoring & Support",
+    ],
+    gradient: "bg-linear-to-t from-[#14532d] to-[#22c55e]",
+  },
+]

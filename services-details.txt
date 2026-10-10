@@ -1,0 +1,90 @@
+1. Real Estate Analytics & BI
+Turn property data into decisions.
+Multifamily Performance Analytics
+Property & Portfolio Dashboards
+Occupancy & Leasing Analytics
+Revenue & NOI Analytics
+Budget vs Actual
+Variance Analysis
+Concessions & Bad Debt Analytics
+Executive & Investor Reporting
+Asset Management Analytics
+Custom Power BI Reporting
+CTA: Explore Real Estate Analytics →
+
+2. Data Engineering & Cloud
+Build a reliable data foundation for your business.
+Data Warehouse & Lakehouse
+Azure Data Engineering
+Microsoft Fabric
+SQL Database Architecture
+ETL / ELT Pipelines
+Yardi Data Integration
+API & Third-Party Integrations
+Data Transformation & Modeling
+Data Quality & Validation
+Cloud Migration
+Automated Data Pipelines
+CTA: Build Your Data Platform →
+
+3. AI & Intelligent Automation
+Move from reporting what happened to understanding what happens next.
+Custom AI Agents
+RAG-based Enterprise Chatbots
+Ask Your Data
+AI-powered Document Intelligence
+Predictive Analytics
+Anomaly Detection
+Automated Insights
+Workflow Automation
+Private / Secure LLM Solutions
+AI Integration with Enterprise Data
+Your existing positioning around AI-driven insights and private AI agents already fits this direction. �
+Anurit Innovation
+CTA: Build an AI Solution →
+
+4. Power BI & Custom Analytics
+Power BI built around the way your business actually works.
+Power BI Dashboard Development
+Advanced DAX Development
+Financial Reporting
+Paginated Reports / PBRS
+Power BI Performance Optimization
+Semantic Models
+Dynamic Measures & Navigation
+Row-Level Security
+Power BI Embedded
+Custom Power BI Visuals
+AppSource-ready Visual Development
+And this is an area where you have a particularly strong differentiator: custom Power BI visuals for specialized workflows, including commenting/collaboration directly against business data. �
+LinkedIn
+CTA: Build Your Power BI Solution →
+
+5. Custom Software & Digital Products
+From business idea to production-ready product.
+SaaS Platforms
+Web Applications
+Internal Business Applications
+Data-driven Applications
+Customer Portals
+APIs & Integrations
+MVP Development
+Product Modernization
+Workflow Applications
+Custom Business Tools
+This lets you sell Anurit beyond just BI projects without making the website look like a generic software-development company.
+CTA: Build Your Product →
+
+6. Managed Data & Analytics Services
+Your data team, without the overhead.
+Power BI Support
+Dashboard Maintenance
+Data Pipeline Monitoring
+Report Enhancements
+Data Quality Monitoring
+Cloud Infrastructure Support
+Performance Optimization
+Ongoing Development
+Analytics Team Augmentation
+24/7 Monitoring & Support
+CTA: Talk to Our Data Team →
