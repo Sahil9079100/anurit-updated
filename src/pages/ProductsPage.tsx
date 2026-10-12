@@ -258,17 +258,6 @@ function ProductCard({
 
         <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3">
           <a
-            href={product.primaryHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`inline-flex items-center gap-1.5 border-b border-neutral-300 text-[14.5px] font-medium tracking-[-0.15px] text-neutral-800 transition-colors duration-200 hover:border-neutral-900 hover:text-neutral-900`}
-          >
-            {product.primaryCta}
-            <span className="transition-transform duration-200 group-hover:translate-x-0.5">
-              →
-            </span>
-          </a>
-          <a
             href={product.secondaryHref}
             target={product.secondaryHref.startsWith("http") ? "_blank" : undefined}
             rel="noopener noreferrer"
