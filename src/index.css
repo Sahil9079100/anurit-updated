@@ -29,3 +29,41 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+/* Scroll-reveal animation (paired with the useReveal hook) */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* Watermark product number — light grey by default, darkens on card hover */
+.product-num {
+  transition: color 0.3s ease;
+}
+
+.group:hover .product-num {
+  color: #78716c; /* stone-500 — a shade darker to highlight on hover */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .product-num {
+    transition: none;
+  }
+}
+

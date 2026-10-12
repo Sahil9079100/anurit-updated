@@ -12,6 +12,8 @@ import PrivacyPolicy from "./pages/PrivacyPolicy"
 import TermsOfService from "./pages/TermsOfService"
 import ServicesPage from "./pages/ServicesPage"
 import ContactPage from "./pages/ContactPage"
+import AboutPage from "./pages/AboutPage"
+import ProductsPage from "./pages/ProductsPage"
 import useSmoothScroll from "./hooks/useSmoothScroll"
 
 export default function App() {
@@ -23,6 +25,8 @@ export default function App() {
   if (path === "/terms") return <TermsOfService />
   if (path === "/service" || path === "/services") return <ServicesPage />
   if (path === "/contact") return <ContactPage />
+  if (path === "/about") return <AboutPage />
+  if (path === "/product" || path === "/products") return <ProductsPage />
 
   return (
     <div className="bg-[#FEFFFC] min-w-0 w-full">

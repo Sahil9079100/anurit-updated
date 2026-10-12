@@ -1,0 +1,114 @@
+================================================================================
+ABOUT US - ANURIT INNOVATION
+================================================================================
+
+Anurit Innovation started with the vision to turn real estate data into AI-Powered Intelligence.
+
+As a specialized data studio, our team of agile engineers is dedicated to helping real estate developers, asset managers, and property operators solve complex operational and financial challenges. Through cloud modernization, automated reporting, and predictive AI insights, we bridge the gap between raw property metrics and high-impact strategic decision-making—ensuring your organization stays ahead in an increasingly digital landscape.
+
+Trusted globally, we proudly serve some of the world’s premier real estate and property management companies, including enterprise leaders like Highmark Residential and Brookfield Properties.
+
+
+================================================================================
+OUR CORE SERVICES & AI CAPABILITIES
+================================================================================
+
+01. Real Estate Analytics & BI
+--------------------------------------------------------------------------------
+Turn property data into strategic decisions.
+• Multifamily Performance & Portfolio Dashboards
+• Occupancy, Leasing & Resident Lifecycle Analytics
+• Revenue, NOI & Cash Flow Analytics
+• Budget vs. Actual Variance Analysis
+• Concessions, Bad Debt & Delinquency Analytics
+• Executive & Investor Reporting Solutions
+• Asset Management Analytics
+• Custom Power BI Reporting & Data Modeling
+
+
+02. Data Engineering & Cloud Modernization
+--------------------------------------------------------------------------------
+Build a reliable, enterprise-grade data foundation.
+• Modern Data Warehouse & Lakehouse Architecture
+• Azure Data Engineering & Microsoft Fabric Integration
+• SQL Database Architecture & Optimization
+• Automated ETL / ELT Data Pipelines
+• Seamless Yardi, RealPage & MRI Data Integrations
+• API & Third-Party System Integrations
+• Data Governance, Quality & Validation Frameworks
+• Cloud Migration & Infrastructure Scalability
+
+
+03. AI & Intelligent Automation (Expanded AI Features)
+--------------------------------------------------------------------------------
+Move from reporting past performance to predicting future opportunities.
+• Custom AI Agents & Autonomous Workflow Bots
+• RAG-Based Enterprise Chatbots for Internal Knowledge Base
+• "Ask Your Data" Natural Language Querying (Chat with Yardi / Financials)
+• AI-Powered Document Intelligence (Automated Lease Parsing & Invoice Processing)
+• Predictive NOI, Occupancy & Rent Optimization Models
+• Real-time Anomaly & Fraud Detection in Property Accounts
+• Automated Insight Summaries for Executive Dashboards
+• Private, Secure & Compliance-Ready Enterprise LLM Implementations
+• Generative AI Integration with Existing Enterprise Data Lakes
+• AI-Driven Resident Churn Prediction & Retention Analytics
+• Automated Maintenance Ticket Routing & Categorization via NLP
+
+
+04. Power BI & Custom Analytics
+--------------------------------------------------------------------------------
+Power BI built precisely around the way your business operates.
+• Enterprise Power BI Dashboard & Report Development
+• Advanced DAX Development & Complex Business Logic
+• Financial Reporting & Paginated Reports (PBRS)
+• Power BI Performance Optimization & Load Balancing
+• Semantic Models, Dynamic Measures & Custom Navigation
+• Granular Row-Level Security (RLS) for Multi-Tenant Access
+• Power BI Embedded for Client & Tenant Portals
+• Custom Power BI Visuals & AppSource-Ready Development
+
+
+05. Custom Software & Digital Products
+--------------------------------------------------------------------------------
+From business idea to scalable production product.
+• Custom SaaS Platforms & Web Applications
+• Internal Business Operations Applications
+• Data-Driven Applications & Analytics Dashboards
+• Customer, Investor & Tenant Portals
+• Robust APIs & System Integrations
+• Rapid MVP Development & Modernization
+• Custom Workflow Automation Tools
+
+
+06. Managed Data & Analytics Services
+--------------------------------------------------------------------------------
+Your dedicated data team, without the overhead.
+• Power BI Support & Dashboard Maintenance
+• Continuous Data Pipeline Monitoring & Performance Tuning
+• Ongoing Report Enhancements & Feature Rollouts
+• Proactive Data Quality & Integrity Audits
+• Cloud Infrastructure Management & Cost Optimization
+• Analytics Team Augmentation & Co-Development
+• 24/7 System Monitoring, SLA & Technical Support
+
+
+================================================================================
+WHY WORLD-LEADING PROPERTY MANAGEMENT FIRMS TRUST ANURIT INNOVATION
+================================================================================
+
+Connecting with and retaining industry leaders like Highmark Residential and Brookfield Properties requires more than basic technical skills. At Anurit Innovation, our partnerships with top-tier global firms are built on key foundational strengths:
+
+1. Deep Real Estate Domain Mastery
+   We don't just understand data engineering; we speak fluency in property management language. From Yardi schema mapping to complex NOI formulas, lease concessions, and portfolio rollups, our solutions fit your business context immediately without long onboarding curves.
+
+2. Enterprise-Grade Security & Governance
+   Handling sensitive property metrics, resident data, and financial transactions demands stringent security. We design secure, compliant infrastructure (Row-Level Security, private LLMs, and enterprise cloud protocols) ensuring your data remains isolated, safe, and governed.
+
+3. Agile Execution & Rapid Time-to-Value
+   Large property management organizations need swift solutions. Our agile deployment strategy allows us to deliver quick, high-impact wins—such as real-time dashboards or automated workflows—within weeks rather than months.
+
+4. Unifying Fragmented Tech Ecosystems
+   Real estate enterprises often struggle with disparate systems (accounting software, CRM, marketing tools, maintenance trackers). We excel at building seamless integration layers that synthesize disparate property data into a single source of truth.
+
+5. Future-Proof Innovation (AI Integration)
+   By actively integrating generative AI and predictive modeling into standard business intelligence setups, we help global property leaders stay far ahead of industry trends, turning static reports into proactive decision engines.

@@ -79,6 +79,7 @@ export default function Navbar({ forceDark = false }: NavbarProps) {
   const [pastHero, setPastHero] = useState(false)
   const scrolled = pastHero || forceDark
   const onServicesPage = window.location.pathname.startsWith("/service")
+  const onProductsPage = window.location.pathname.startsWith("/product")
 
   /* ── Close on Escape ── */
   useEffect(() => {
@@ -110,7 +111,7 @@ export default function Navbar({ forceDark = false }: NavbarProps) {
   }, [])
 
   const linkClass = (active: boolean) =>
-    `inline-flex items-center rounded-lg px-3.5 py-2 text-[14px] tracking-[0.02em] transition-colors duration-300 ${
+    `inline-flex items-center whitespace-nowrap rounded-lg px-3.5 py-2 text-[14px] tracking-[0.02em] transition-colors duration-300 ${
       active
         ? scrolled
           ? "bg-black/15 text-black"
@@ -127,7 +128,7 @@ export default function Navbar({ forceDark = false }: NavbarProps) {
           className="
             rounded-xl border border-white/20 bg-white/10
             backdrop-blur-md shadow-[0_4px_14px_rgba(0,0,0,0.12)]
-            overflow-hidden min-w-[480px] max-w-[600px]
+            overflow-hidden min-w-[480px] max-w-[680px]
           "
         >
           {/* ─── Navbar Row ─── */}
@@ -137,7 +138,7 @@ export default function Navbar({ forceDark = false }: NavbarProps) {
               {/* Logo — text switches white/black with scroll */}
               <a href="/" className="shrink-0">
                 <span
-                  className={`font-['Pixelify_Sans:Regular'] text-[19px] leading-none transition-colors duration-300 ${
+                  className={`font-['Pixelify_Sans:Regular'] whitespace-nowrap text-[19px] leading-none transition-colors duration-300 ${
                     scrolled ? "text-black" : "text-white"
                   }`}
                 >
@@ -154,6 +155,15 @@ export default function Navbar({ forceDark = false }: NavbarProps) {
                     className={linkClass(onServicesPage)}
                   >
                     Services
+                  </a>
+                </li>
+                <li className="list-none">
+                  <a
+                    href="/products"
+                    aria-current={onProductsPage ? "page" : undefined}
+                    className={linkClass(onProductsPage)}
+                  >
+                    Products
                   </a>
                 </li>
                 <li className="list-none">
@@ -239,6 +249,15 @@ export default function Navbar({ forceDark = false }: NavbarProps) {
                     className="flex w-full items-center gap-2 rounded-lg px-3 py-2.5 text-[15px] text-white/80 transition-colors hover:bg-white/10 hover:text-white"
                   >
                     Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/products"
+                    onClick={() => setMobileOpen(false)}
+                    className="flex w-full items-center gap-2 rounded-lg px-3 py-2.5 text-[15px] text-white/80 transition-colors hover:bg-white/10 hover:text-white"
+                  >
+                    Products
                   </a>
                 </li>
                 <li>
