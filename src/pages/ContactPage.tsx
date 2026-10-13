@@ -4,9 +4,7 @@ import Footer from "../sections/Footer"
 import { company } from "../data/company"
 
 const socialLinks = [
-  { label: "LinkedIn", href: "https://www.linkedin.com/" },
-  { label: "Twitter/X", href: "https://x.com/" },
-  { label: "GitHub", href: "https://github.com/" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/anurit/posts/?feedView=all" },
 ]
 
 export default function ContactPage() {

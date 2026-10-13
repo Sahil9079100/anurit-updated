@@ -43,15 +43,17 @@ function SectionHeading({
   title,
   subtitle,
 }: {
-  eyebrow: string
+  eyebrow?: string
   title: string
   subtitle?: string
 }) {
   return (
     <Reveal className="mx-auto max-w-[760px] text-center">
-      <p className={`${body} text-[14px] font-normal tracking-[0.02em] text-neutral-500`}>
-        {eyebrow}
-      </p>
+      {eyebrow && (
+        <p className={`${body} text-[14px] font-normal tracking-[0.02em] text-neutral-500`}>
+          {eyebrow}
+        </p>
+      )}
       <h2
         className={`${pixel} mt-5 text-[30px] leading-[1.12] tracking-[-0.4px] text-neutral-900 sm:text-[40px]`}
       >
@@ -74,14 +76,6 @@ function AboutHero() {
   return (
     <section className="overflow-x-clip bg-[#FEFFFC]">
       <div className="mx-auto max-w-[880px] px-6 pb-24 pt-[150px] text-center md:pb-[180px]">
-        <Reveal>
-          <p
-            className={`${body} mx-auto max-w-[560px] text-[15px] leading-[1.5] tracking-[-0.15px] text-neutral-700`}
-          >
-            {aboutStory.intro[0]}
-          </p>
-        </Reveal>
-
         <Reveal delay={80}>
           <h1
             className={`${pixel} mx-auto mt-8 max-w-[24ch] text-[34px] leading-[1.12] tracking-[-0.5px] text-neutral-900 sm:text-[48px] lg:text-[54px]`}
@@ -225,7 +219,6 @@ function ServicesSection() {
     <section className="bg-[#FEFFFC] border-t border-neutral-200">
       <div className="mx-auto max-w-[1000px] px-6 py-24 md:py-[120px]">
         <SectionHeading
-          eyebrow="Our Core Services & AI Capabilities"
           title="A full-stack data, analytics, and AI partner"
           subtitle="Everything you need to move from raw property metrics to high-impact strategic decisions — engineered around the way real estate businesses actually operate."
         />
@@ -292,7 +285,6 @@ function TrustSection() {
     <section className="bg-[#FEFFFC] border-t border-neutral-200">
       <div className="mx-auto max-w-[1000px] px-6 py-24 md:py-[120px]">
         <SectionHeading
-          eyebrow="Why Anurit"
           title="Why world-leading property firms trust Anurit Innovation"
           subtitle="Connecting with and retaining industry leaders like Highmark Residential and Brookfield Properties requires more than basic technical skills — it's built on these foundational strengths."
         />
