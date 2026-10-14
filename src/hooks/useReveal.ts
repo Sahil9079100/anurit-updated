@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react"
 
 /**
  * Reveals an element once it scrolls into view by adding the
- * `is-visible` class (paired with the `.reveal` CSS in index.css).
+ * `is-visible` class (paired with the `.reveal` CSS in globals.css).
  * Respects `prefers-reduced-motion`.
  */
 export function useReveal<T extends HTMLElement = HTMLDivElement>(

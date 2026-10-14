@@ -1,10 +1,12 @@
+"use client"
+
 import { useState, type ReactNode } from "react"
-import Navbar from "../components/Navbar"
-import Footer from "../sections/Footer"
-import ContactCta from "../sections/ContactCta"
-import { useReveal } from "../hooks/useReveal"
-import { aboutServices, aboutStory, trustPillars } from "../data/about"
-import { imgRetroStamp } from "../assets"
+import Navbar from "@/components/Navbar"
+import Footer from "@/sections/Footer"
+import ContactCta from "@/sections/ContactCta"
+import { useReveal } from "@/hooks/useReveal"
+import { aboutServices, aboutStory, trustPillars } from "@/data/about"
+import { imgRetroStamp } from "@/assets"
 
 const pixel = "font-['Pixelify_Sans:Regular'] font-normal"
 const body = "font-['Plus_Jakarta_Sans:Regular'] font-normal"
@@ -304,11 +306,7 @@ function TrustSection() {
   )
 }
 
-/* ──────────────────────────────────────────────
-   Page
-   ────────────────────────────────────────────── */
-
-export default function AboutPage() {
+export default function AboutView() {
   return (
     <div className="bg-[#FEFFFC] min-w-0 w-full text-neutral-900">
       <Navbar forceDark />

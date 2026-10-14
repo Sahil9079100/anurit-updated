@@ -19,10 +19,10 @@ export default function Hero() {
           {`\ndata into better\ndecisions.`}
         </h1>
 
-        {/* Paragraph box offset — translate(x, y): x = right/left, y = down/up */}
+        {/* Paragraph box — pushed down with a margin so the hero section grows to contain it (no overflow/cut). Horizontal offset kept via transform. */}
         <div
-          className="backdrop-blur-[7.55px] bg-[rgba(92,92,92,0.3)] border border-[rgba(0,0,0,0.46)] border-solid rounded-[10px] p-8 max-w-[455px]"
-          style={{ transform: "translate(20px, 160px)" }}
+          className="backdrop-blur-[7.55px] bg-[rgba(92,92,92,0.3)] border border-[rgba(0,0,0,0.46)] border-solid rounded-[10px] p-8 max-w-[455px] mt-[160px]"
+          style={{ transform: "translate(20px, 0)" }}
         >
           <p className="font-['Plus_Jakarta_Sans:Regular'] font-normal text-[20px] text-white leading-normal">
             We build data, analytics, and intelligent technology that help real

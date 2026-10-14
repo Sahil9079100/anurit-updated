@@ -1,6 +1,15 @@
-import LegalPage, { LegalBody, LegalList, LegalSection } from "../components/LegalPage"
+import type { Metadata } from "next"
+import LegalPage, {
+  LegalBody,
+  LegalList,
+  LegalSection,
+} from "@/components/LegalPage"
+import { company } from "@/data/company"
 
-import { company } from "../data/company"
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: "Anurit Innovation Privacy Statement.",
+}
 
 const LAST_UPDATED = "October 10, 2026"
 

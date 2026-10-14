@@ -1,4 +1,8 @@
+"use client"
+
 import { useEffect, useState } from "react"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 /* ──────────────────────────────────────────────
    Icons
@@ -29,13 +33,13 @@ function ArrowIcon({ className = "" }: { className?: string }) {
 
 function CtaPill({ className = "" }: { className?: string }) {
   return (
-    <a
+    <Link
       href="/contact"
       className={`group inline-flex shrink-0 items-center gap-2 rounded-full bg-white px-5 py-2 text-[13.5px] text-[#0d0e15] shadow-[0_8px_24px_rgba(255,255,255,0.16)] transition-all duration-300 hover:bg-gray-200 ${className}`}
     >
       Talk to Our Team
       <ArrowIcon className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
-    </a>
+    </Link>
   )
 }
 
@@ -77,9 +81,10 @@ interface NavbarProps {
 export default function Navbar({ forceDark = false }: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [pastHero, setPastHero] = useState(false)
+  const pathname = usePathname()
   const scrolled = pastHero || forceDark
-  const onServicesPage = window.location.pathname.startsWith("/service")
-  const onProductsPage = window.location.pathname.startsWith("/product")
+  const onServicesPage = pathname.startsWith("/service")
+  const onProductsPage = pathname.startsWith("/product")
 
   /* ── Close on Escape ── */
   useEffect(() => {
@@ -128,7 +133,7 @@ export default function Navbar({ forceDark = false }: NavbarProps) {
           className="
             rounded-xl border border-white/20 bg-white/10
             backdrop-blur-md shadow-[0_4px_14px_rgba(0,0,0,0.12)]
-            overflow-hidden min-w-[480px] max-w-[680px]
+            overflow-hidden w-[min(calc(100vw-2rem),40rem)] min-w-0
           "
         >
           {/* ─── Navbar Row ─── */}
@@ -136,7 +141,7 @@ export default function Navbar({ forceDark = false }: NavbarProps) {
             {/* Left group: brand + nav links */}
             <div className="flex items-center gap-1">
               {/* Logo — text switches white/black with scroll */}
-              <a href="/" className="shrink-0">
+              <Link href="/" className="shrink-0">
                 <span
                   className={`font-['Pixelify_Sans:Regular'] whitespace-nowrap text-[19px] leading-none transition-colors duration-300 ${
                     scrolled ? "text-black" : "text-white"
@@ -144,32 +149,32 @@ export default function Navbar({ forceDark = false }: NavbarProps) {
                 >
                   Anurit Innovation
                 </span>
-              </a>
+              </Link>
 
               {/* Desktop links */}
               <ul className="ml-2 hidden list-none items-center gap-1 lg:flex">
                 <li className="list-none">
-                  <a
+                  <Link
                     href="/service"
                     aria-current={onServicesPage ? "page" : undefined}
                     className={linkClass(onServicesPage)}
                   >
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li className="list-none">
-                  <a
+                  <Link
                     href="/products"
                     aria-current={onProductsPage ? "page" : undefined}
                     className={linkClass(onProductsPage)}
                   >
                     Products
-                  </a>
+                  </Link>
                 </li>
                 <li className="list-none">
-                  <a href="/about" className={linkClass(false)}>
+                  <Link href="/about" className={linkClass(false)}>
                     About Us
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -243,31 +248,31 @@ export default function Navbar({ forceDark = false }: NavbarProps) {
             <div className="flex-1 px-6 py-4">
               <ul className="space-y-1">
                 <li>
-                  <a
+                  <Link
                     href="/service"
                     onClick={() => setMobileOpen(false)}
                     className="flex w-full items-center gap-2 rounded-lg px-3 py-2.5 text-[15px] text-white/80 transition-colors hover:bg-white/10 hover:text-white"
                   >
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/products"
                     onClick={() => setMobileOpen(false)}
                     className="flex w-full items-center gap-2 rounded-lg px-3 py-2.5 text-[15px] text-white/80 transition-colors hover:bg-white/10 hover:text-white"
                   >
                     Products
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/about"
                     onClick={() => setMobileOpen(false)}
                     className="flex w-full items-center gap-2 rounded-lg px-3 py-2.5 text-[15px] text-white/80 transition-colors hover:bg-white/10 hover:text-white"
                   >
                     About Us
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

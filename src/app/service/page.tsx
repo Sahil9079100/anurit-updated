@@ -1,9 +1,17 @@
-import Navbar from "../components/Navbar"
-import ServiceDetails from "../components/ServiceDetails"
-import ServiceOrbit from "../components/ServiceOrbit"
-import ServiceTile from "../components/ServiceTile"
-import Footer from "../sections/Footer"
-import { services } from "../data/services"
+import type { Metadata } from "next"
+import Link from "next/link"
+import Navbar from "@/components/Navbar"
+import ServiceDetails from "@/components/ServiceDetails"
+import ServiceOrbit from "@/components/ServiceOrbit"
+import ServiceTile from "@/components/ServiceTile"
+import Footer from "@/sections/Footer"
+import { services } from "@/data/services"
+
+export const metadata: Metadata = {
+  title: "Services",
+  description:
+    "From raw data to intelligent systems — data engineering, analytics, AI, Power BI, custom software, and managed services.",
+}
 
 function ServiceIntro() {
   return (
@@ -14,12 +22,12 @@ function ServiceIntro() {
       <p className="mt-4 max-w-md font-['Plus_Jakarta_Sans:Regular'] text-[18px] leading-relaxed text-[#474444]">
         From raw data to intelligent systems
       </p>
-      <a
+      <Link
         href="/contact"
         className="pointer-events-auto mt-8 inline-flex h-10 items-center rounded-full bg-black px-6 font-['Plus_Jakarta_Sans:Regular'] text-[14px] text-white transition-colors duration-300 hover:bg-black/80"
       >
         Talk to our team
-      </a>
+      </Link>
     </div>
   )
 }

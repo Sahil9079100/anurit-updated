@@ -1,4 +1,14 @@
-import LegalPage, { LegalBody, LegalList, LegalSection } from "../components/LegalPage"
+import type { Metadata } from "next"
+import LegalPage, {
+  LegalBody,
+  LegalList,
+  LegalSection,
+} from "@/components/LegalPage"
+
+export const metadata: Metadata = {
+  title: "Terms of Service",
+  description: "Anurit Innovation Terms of Service.",
+}
 
 const LAST_UPDATED = "Feb 10, 2026"
 
@@ -32,7 +42,7 @@ export default function TermsOfService() {
         </p>
         <p>
           We reserve the sole right to either modify or discontinue the Website, including any of
-          the Website's features, at any time with or without notice to you. We will not be liable
+          the Website&apos;s features, at any time with or without notice to you. We will not be liable
           to you or any third party should we exercise such right. Any new features that augment or
           enhance the then-current services on this Website shall also be subject to these Terms of
           Service.
@@ -52,7 +62,7 @@ export default function TermsOfService() {
         <LegalList>
           <li>
             Is unlawful, threatening, abusive, harassing, defamatory, libelous, deceptive,
-            fraudulent, invasive of another's privacy, tortious, contains explicit or graphic
+            fraudulent, invasive of another&apos;s privacy, tortious, contains explicit or graphic
             descriptions or accounts of sexual acts (including but not limited to sexual language of
             a violent or threatening nature directed at another individual or group of
             individuals), or otherwise violates our rules or policies.
@@ -67,7 +77,7 @@ export default function TermsOfService() {
           </li>
           <li>
             Constitutes unauthorized or unsolicited advertising, junk, or bulk email (also known as
-            "spamming"), chain letters, any other form of unauthorized solicitation, or any form of
+            &quot;spamming&quot;), chain letters, any other form of unauthorized solicitation, or any form of
             lottery or gambling.
           </li>
           <li>
@@ -149,7 +159,7 @@ export default function TermsOfService() {
           our control.
         </p>
         <p>
-          You understand and agree that the services available on this Website are provided "AS IS"
+          You understand and agree that the services available on this Website are provided &quot;AS IS&quot;
           and that we assume no responsibility for the timeliness, deletion, misdelivery, or failure
           to store any user communications or personalization settings.
         </p>

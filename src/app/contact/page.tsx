@@ -1,7 +1,14 @@
-import ContactForm from "../components/ContactForm"
-import Navbar from "../components/Navbar"
-import Footer from "../sections/Footer"
-import { company } from "../data/company"
+import type { Metadata } from "next"
+import ContactForm from "@/components/ContactForm"
+import Navbar from "@/components/Navbar"
+import Footer from "@/sections/Footer"
+import { company } from "@/data/company"
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description:
+    "Ask any question, book a demo, or get support from the Anurit Innovation team.",
+}
 
 const socialLinks = [
   { label: "LinkedIn", href: "https://www.linkedin.com/company/anurit/posts/?feedView=all" },

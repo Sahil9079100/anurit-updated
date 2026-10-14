@@ -1,8 +1,16 @@
+"use client"
+
 import type { ReactNode } from "react"
-import Navbar from "../components/Navbar"
-import Footer from "../sections/Footer"
-import { useReveal } from "../hooks/useReveal"
-import { products, type Product } from "../data/products"
+import Link from "next/link"
+import Navbar from "@/components/Navbar"
+import Footer from "@/sections/Footer"
+import { useReveal } from "@/hooks/useReveal"
+import { products, type Product } from "@/data/products"
+import {
+  imgProductAskData,
+  imgProductRowNote,
+  imgProductDynamicUrl,
+} from "@/assets"
 
 const pixel = "font-['Pixelify_Sans:Regular'] font-normal"
 const body = "font-['Plus_Jakarta_Sans:Regular'] font-normal"
@@ -62,79 +70,13 @@ function ProductsHero() {
 }
 
 /* ──────────────────────────────────────────────
-   Mini product visuals (CSS-drawn)
+   Mini product visual (CSS-drawn — Page Tracker only)
    ────────────────────────────────────────────── */
-
-function VisualAskData({ accent }: { accent: string }) {
-  return (
-    <div className="space-y-3">
-      <div className="ml-auto w-fit max-w-[70%] rounded-xl rounded-br-md bg-neutral-900 px-3.5 py-2.5 text-[12.5px] leading-snug text-white">
-        What's our Q3 occupancy?
-      </div>
-      <div className="flex w-fit max-w-[88%] items-start gap-2.5 rounded-xl rounded-bl-md bg-neutral-100 px-3.5 py-2.5">
-        <span className={`mt-1 h-1.5 w-1.5 shrink-0 rounded-full ${accent}`} />
-        <span className="text-[12.5px] leading-snug text-neutral-700">
-          Occupancy is <strong className="font-semibold text-neutral-900">94.2%</strong> — up 1.8
-          pts quarter over quarter.
-        </span>
-      </div>
-      <div className="ml-6 flex w-fit max-w-[60%] flex-col gap-1.5 rounded-xl rounded-bl-md border border-neutral-200 bg-white px-3.5 py-2.5">
-        <span className="text-[11px] uppercase tracking-[0.12em] text-neutral-400">
-          Sources
-        </span>
-        <span className="flex flex-wrap gap-1">
-          <span className={`rounded-full px-2 py-0.5 text-[10.5px] ${accent.replace("text", "bg")}/10 text-neutral-700`}>
-            Yardi
-          </span>
-          <span className="rounded-full bg-neutral-100 px-2 py-0.5 text-[10.5px] text-neutral-600">
-            Financials
-          </span>
-        </span>
-      </div>
-    </div>
-  )
-}
-
-function VisualRowNote({ accent }: { accent: string }) {
-  return (
-    <div className="overflow-hidden rounded-xl border border-neutral-200 bg-white text-[12px]">
-      <div className="flex justify-between border-b border-neutral-100 bg-neutral-50 px-3 py-2 text-[11px] text-neutral-500">
-        <span>Unit</span>
-        <span>Status</span>
-        <span>NOI</span>
-      </div>
-      <div className="flex justify-between px-3 py-2 text-neutral-400">
-        <span>A-101</span>
-        <span>Occupied</span>
-        <span>12.4k</span>
-      </div>
-      <div className="relative flex justify-between bg-[#6366f1]/5 px-3 py-2 ring-1 ring-inset ring-[#6366f1]/40">
-        <span className="font-medium text-neutral-800">A-102</span>
-        <span className="text-neutral-800">Vacant</span>
-        <span className="text-neutral-800">9.8k</span>
-        <span className="absolute -right-2 -top-2.5 grid h-5 w-5 place-items-center rounded-full bg-[#6366f1] text-white shadow-sm">
-          <svg viewBox="0 0 16 16" fill="none" className="h-3 w-3">
-            <path d="M8 3v10M3 8h10" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-          </svg>
-        </span>
-      </div>
-      <div className="flex justify-between px-3 py-2 text-neutral-400">
-        <span>A-103</span>
-        <span>Occupied</span>
-        <span>11.2k</span>
-      </div>
-      <div className="relative mx-3 mb-3 rounded-lg bg-neutral-50 px-3 py-2 text-[11.5px] text-neutral-600">
-        <span className={`${accent} font-medium`}>@analyst</span> Flagged — needs a
-        renewal follow-up.
-      </div>
-    </div>
-  )
-}
 
 function VisualPageTracker({ accent }: { accent: string }) {
   const bars = [34, 52, 40, 78, 58, 64, 46]
   return (
-    <div className="flex flex-col gap-3 rounded-xl border border-neutral-200 bg-white p-4">
+    <div className="mt-8 flex flex-col gap-3 rounded-xl border border-neutral-200 bg-white p-4">
       <div className="flex items-center justify-between">
         <span className="text-[11px] uppercase tracking-[0.12em] text-neutral-400">
           Sessions / page
@@ -162,40 +104,36 @@ function VisualPageTracker({ accent }: { accent: string }) {
   )
 }
 
-function VisualDynamicUrl({ accent }: { accent: string }) {
-  return (
-    <div className="overflow-hidden rounded-xl border border-neutral-200 bg-white">
-      <div className="grid aspect-[3/2] place-items-center bg-neutral-100">
-        <div className="relative h-14 w-14 rotate-3">
-          <div className="absolute inset-0 rounded-lg bg-[#f43f5e]/15 ring-1 ring-inset ring-[#f43f5e]/30" />
-          <div className="absolute inset-3 rounded-md bg-[#f43f5e]/25" />
-          <div className="absolute inset-6 rounded bg-[#f43f5e]/30" />
-          <span className="absolute -top-1 left-1/2 h-3 w-3 -translate-x-1/2 rounded-t-sm bg-[#f43f5e]/60" />
-        </div>
-      </div>
-      <div className="flex items-center gap-2 px-3 py-2">
-        <span className="h-2 w-2 rounded-full bg-emerald-400" />
-        <span className="truncate text-[11px] text-neutral-500">
-          https://cdn.anurit.com/logo.png
-        </span>
-      </div>
-    </div>
-  )
-}
-
 function ProductVisual({ product }: { product: Product }) {
-  switch (product.id) {
-    case "ask-data":
-      return <VisualAskData accent={product.accent} />
-    case "row-note":
-      return <VisualRowNote accent={product.accent} />
-    case "page-tracker":
-      return <VisualPageTracker accent={product.accent} />
-    case "dynamic-url-image":
-      return <VisualDynamicUrl accent={product.accent} />
-    default:
-      return null
+  const image = (() => {
+    switch (product.id) {
+      case "ask-data":
+        return imgProductAskData
+      case "row-note":
+        return imgProductRowNote
+      case "dynamic-url-image":
+        return imgProductDynamicUrl
+      default:
+        return ""
+    }
+  })()
+
+  // Products with a dedicated screenshot image
+  if (image) {
+    return (
+      <div className="mx-auto mt-8 w-[96%] max-w-[600px] overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-50 shadow-[0_10px_30px_-18px_rgba(0,0,0,0.25)] sm:mt-10">
+        <img
+          src={image}
+          alt={product.title}
+          loading="lazy"
+          className="h-auto w-full object-cover"
+        />
+      </div>
+    )
   }
+
+  // Page Tracker has no image yet — keep the CSS-drawn visual
+  return <VisualPageTracker accent={product.accent} />
 }
 
 /* ──────────────────────────────────────────────
@@ -221,7 +159,7 @@ function ProductCard({
       {/* Faint watermark number — glows gently on hover */}
       <span
         aria-hidden="true"
-        className={`${pixel} product-num pointer-events-none absolute -top-3 right-4 text-[96px] leading-none tracking-[-2px] text-neutral-200`}
+        className={`${pixel} product-num pointer-events-none absolute right-4 top-0 text-[72px] leading-none tracking-[-2px] text-neutral-300`}
       >
         {num}
       </span>
@@ -316,7 +254,7 @@ function ProductsCta() {
           >
             Book a demo for Ask Data or get support for our Power BI visuals.
           </p>
-          <a
+          <Link
             href="/contact"
             className={`${body} group mt-9 inline-flex h-12 items-center gap-3 rounded-full bg-neutral-900 px-8 text-[15px] font-medium text-white transition-colors duration-300 hover:bg-neutral-800`}
           >
@@ -324,7 +262,7 @@ function ProductsCta() {
             <span className="transition-transform duration-300 group-hover:translate-x-1">
               →
             </span>
-          </a>
+          </Link>
         </Reveal>
       </div>
     </section>
@@ -332,10 +270,10 @@ function ProductsCta() {
 }
 
 /* ──────────────────────────────────────────────
-   Page
+   View
    ────────────────────────────────────────────── */
 
-export default function ProductsPage() {
+export default function ProductsView() {
   return (
     <div className="min-w-0 w-full bg-[#FEFFFC] text-neutral-900">
       <Navbar forceDark />

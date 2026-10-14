@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { imgImage12 } from "../assets"
 
 const linkClass =
@@ -30,13 +31,13 @@ export default function Footer() {
             •
           </span>
           <nav aria-label="Legal" className="flex items-center gap-4 sm:gap-6">
-            <a href="/privacy" className={linkClass}>
+            <Link href="/privacy" className={linkClass}>
               Privacy Policy
-            </a>
+            </Link>
             <span aria-hidden="true">•</span>
-            <a href="/terms" className={linkClass}>
+            <Link href="/terms" className={linkClass}>
               Terms &amp; Conditions
-            </a>
+            </Link>
           </nav>
         </div>
       </footer>
