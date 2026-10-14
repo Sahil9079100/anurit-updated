@@ -3,6 +3,9 @@ dist/
 build/
 .next/
 out/
+
+# Reference copy of the live production site (not part of this project)
+main_project_code_(just  for refrence)/
 .cache/
 .env*
 .vite/

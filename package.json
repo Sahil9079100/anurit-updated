@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start -p ${PORT:-8443}",
     "lint": "next lint",
+    "unzip-pbix": "node scripts/powerbi/unzip-pbix.js",
     "format": "oxfmt"
   },
   "dependencies": {

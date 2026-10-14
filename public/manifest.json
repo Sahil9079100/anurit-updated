@@ -1,0 +1,10 @@
+{
+  "name": "Anurit Innovation",
+  "short_name": "Anurit",
+  "description": "Business Intelligence and Data Engineering for Real Estate",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary"
+}

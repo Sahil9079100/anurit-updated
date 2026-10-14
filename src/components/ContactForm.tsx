@@ -13,7 +13,6 @@ type FormErrors = Partial<Record<keyof FormValues, string>>
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
 const EMPTY_VALUES: FormValues = { name: "", email: "", message: "" }
 const FIELD_ORDER: (keyof FormValues)[] = ["name", "email", "message"]
-const SUBMIT_DELAY_MS = 3000
 
 function validate(values: FormValues): FormErrors {
   const errors: FormErrors = {}
@@ -48,7 +47,7 @@ export default function ContactForm({ className = "" }: { className?: string }) 
     if (status === "submitted") setStatus("idle")
   }
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     if (status === "submitting") return
 
@@ -61,19 +60,30 @@ export default function ContactForm({ className = "" }: { className?: string }) 
       return
     }
 
-    const payload: FormValues = {
+    const payload = {
       name: values.name.trim(),
       email: values.email.trim(),
+      interest: "",
       message: values.message.trim(),
     }
 
     setStatus("submitting")
-    timerRef.current = window.setTimeout(() => {
-      console.log("Contact form submitted:", payload)
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      })
+
+      if (!res.ok) throw new Error("Request failed")
       setValues(EMPTY_VALUES)
       setStatus("submitted")
-      timerRef.current = null
-    }, SUBMIT_DELAY_MS)
+    } catch {
+      setStatus("idle")
+      window.alert(
+        "Sorry, we couldn’t send your message right now. Please try again in a moment.",
+      )
+    }
   }
 
   return (
