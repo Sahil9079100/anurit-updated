@@ -39,6 +39,9 @@ export const imgLine1 = `${assetPathPrefix}/6d0b8.svg`
 export const imgLine3 = `${assetPathPrefix}/70547.svg`
 export const imgRetroStamp = `${assetPathPrefix}/Retro_Child_and_City_Stamp.png`
 
+export const imgAnuritLogoWhite = `${assetPathPrefix}/anurit-logo-white.png`
+export const imgAnuritLogoBlack = `${assetPathPrefix}/anurit-logo-black.png`
+
 export const imgProductAskData = `${assetPathPrefix}/askdataimage.png`
 export const imgProductRowNote = `${assetPathPrefix}/rownoteimage.png`
 export const imgProductDynamicUrl = `${assetPathPrefix}/dynamicurlimage.png`

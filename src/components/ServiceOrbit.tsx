@@ -51,8 +51,13 @@ export default function ServiceOrbit({ children }: ServiceOrbitProps) {
     let last = performance.now()
 
     const render = () => {
-      const rx = Math.min(width * 0.42, 560)
-      const ry = height * 0.34
+      // On mobile the orbit is zoomed in so only the middle of the oval shows;
+      // the left/right ends scroll off-screen intentionally.
+      const isCompact = width < 768
+      const rx = isCompact ? width * 0.68 : Math.min(width * 0.42, 560)
+      const ry = isCompact ? height * 0.36 : height * 0.34
+      const scaleMin = isCompact ? 0.4 : 0.62
+      const scaleMax = isCompact ? 0.66 : 1.12
       const count = services.length
 
       itemRefs.current.forEach((el, i) => {
@@ -60,7 +65,7 @@ export default function ServiceOrbit({ children }: ServiceOrbitProps) {
         const theta = angleRef.current + (i * Math.PI * 2) / count
         // 0 = far side (top of the ellipse), 1 = near side (bottom).
         const depth = (Math.sin(theta) + 1) / 2
-        const scale = 0.62 + depth * 0.5
+        const scale = scaleMin + depth * (scaleMax - scaleMin)
         const ex = Math.cos(theta) * rx
         const ey = Math.sin(theta) * ry
         const x = ex * TILT_COS - ey * TILT_SIN
@@ -68,7 +73,7 @@ export default function ServiceOrbit({ children }: ServiceOrbitProps) {
 
         el.style.transform = `translate3d(${x}px, ${y}px, 0) translate(-50%, -50%) scale(${scale})`
         el.style.opacity = String(0.5 + depth * 0.5)
-        el.style.zIndex = String(Math.round(depth * 100))
+        el.style.zIndex = String(Math.round(depth * 40))
       })
     }
 
@@ -100,7 +105,7 @@ export default function ServiceOrbit({ children }: ServiceOrbitProps) {
   }, [])
 
   return (
-    <div ref={containerRef} className="relative hidden h-[680px] w-full lg:block">
+    <div ref={containerRef} className="relative -mx-6 md:mx-0 h-[420px] w-[calc(100%+48px)] md:w-full overflow-x-clip md:h-[520px] lg:h-[680px]">
       <ul aria-label="Our services" className="absolute inset-0 m-0 list-none p-0">
         {services.map((service, i) => (
           <li
@@ -117,15 +122,15 @@ export default function ServiceOrbit({ children }: ServiceOrbitProps) {
             <a
               href={`#${service.slug}`}
               aria-label={`${service.title} — view details`}
-              className="block rounded-2xl outline-offset-4 focus-visible:outline-2 focus-visible:outline-black"
+              className="block rounded-xl outline-offset-4 focus-visible:outline-2 focus-visible:outline-black"
             >
-              <ServiceTile service={service} index={i} className="h-[168px] w-[168px]" />
+              <ServiceTile service={service} index={i} className="h-[120px] w-[120px] md:h-[116px] md:w-[116px] lg:h-[168px] lg:w-[168px]" />
             </a>
           </li>
         ))}
       </ul>
 
-      <div className="pointer-events-none absolute inset-0 z-[110] flex items-center justify-center">
+      <div className="pointer-events-none absolute inset-0 z-[50] flex items-center justify-center">
         {children}
       </div>
     </div>

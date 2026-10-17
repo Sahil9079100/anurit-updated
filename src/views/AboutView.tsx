@@ -80,7 +80,7 @@ function AboutHero() {
       <div className="mx-auto max-w-[880px] px-6 pb-24 pt-[150px] text-center md:pb-[180px]">
         <Reveal delay={80}>
           <h1
-            className={`${pixel} mx-auto mt-8 max-w-[24ch] text-[34px] leading-[1.12] tracking-[-0.5px] text-neutral-900 sm:text-[48px] lg:text-[54px]`}
+            className={`${pixel} mx-auto mt-8 max-w-[24ch] text-[28px] leading-[1.12] tracking-[-0.5px] text-neutral-900 sm:text-[48px] lg:text-[54px]`}
           >
             Turning{" "}
             <span className={`${body} font-normal tracking-[-0.2px]`}>
@@ -93,7 +93,7 @@ function AboutHero() {
         <Reveal delay={160}>
           <div className="relative mx-auto mt-14 max-w-[560px] overflow-visible rounded-2xl border border-neutral-300 bg-white p-6 pb-24 text-left shadow-[0_2px_6px_0_rgba(0,0,0,0.06)] md:p-10 md:pb-36">
             <p
-              className={`${body} text-[16.5px] leading-[1.45] tracking-[-0.2px] text-neutral-800`}
+              className={`${body} text-[14.5px] leading-[1.45] tracking-[-0.2px] text-neutral-800 md:text-[16.5px]`}
             >
               {aboutStory.intro[1]}
             </p>
@@ -151,25 +151,25 @@ function ServiceItem({
         aria-expanded={expanded}
         aria-controls={id}
         onClick={onToggle}
-        className="flex w-full items-center gap-4 px-6 py-6 text-left md:gap-6 md:px-8"
+        className="flex w-full items-start gap-3 px-4 py-4 text-left md:items-center md:gap-6 md:px-8"
       >
-        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-neutral-300 text-[14px] tracking-[-0.2px] text-neutral-700">
+        <span className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-full border border-neutral-300 text-[13px] tracking-[-0.2px] text-neutral-700 md:mt-0 md:h-10 md:w-10 md:text-[14px]">
           {service.number}
         </span>
         <span className="min-w-0 flex-1">
           <span
-            className={`${pixel} block text-[21px] leading-snug tracking-[-0.4px] text-neutral-900 md:text-[24px]`}
+            className={`${pixel} block text-[18px] leading-snug tracking-[-0.4px] text-neutral-900 md:text-[24px]`}
           >
             {service.title}
           </span>
           <span
-            className={`${body} mt-1 block text-[15px] leading-snug text-neutral-500`}
+            className={`${body} mt-0.5 block text-[13px] leading-snug text-neutral-500 md:mt-1 md:text-[15px]`}
           >
             {service.tagline}
           </span>
         </span>
         <span
-          className={`grid h-9 w-9 shrink-0 place-items-center rounded-full border text-neutral-900 transition-all duration-300 ${
+          className={`mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-full border text-neutral-900 transition-all duration-300 md:mt-0 md:h-9 md:w-9 ${
             expanded
               ? "rotate-45 border-neutral-900 bg-neutral-900 text-white"
               : "border-neutral-300"
@@ -199,7 +199,7 @@ function ServiceItem({
               <div key={capability} className="flex items-start gap-3">
                 <span className="mt-[8px] h-1 w-1 shrink-0 rounded-full bg-neutral-400" />
                 <span
-                  className={`${body} text-[15.5px] leading-snug text-neutral-700`}
+                  className={`${body} text-[13.5px] leading-snug text-neutral-700 md:text-[15.5px]`}
                 >
                   {capability}
                 </span>
@@ -274,7 +274,7 @@ function TrustPillarCard({
       >
         {pillar.title}
       </h3>
-      <p className={`${body} mt-3 text-[15.5px] leading-[1.55] text-neutral-600`}>
+      <p className={`${body} mt-3 text-[14px] leading-[1.5] text-neutral-600 md:text-[15px]`}>
         {pillar.description}
       </p>
     </article>

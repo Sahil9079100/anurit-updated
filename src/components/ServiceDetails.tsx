@@ -2,7 +2,7 @@ import { services } from "../data/services"
 
 export default function ServiceDetails() {
   return (
-    <section aria-label="Service details" className="mx-auto mt-24 max-w-6xl border-t border-black/10">
+    <section aria-label="Service details" className="mx-auto mt-24 max-w-6xl">
       {services.map((service, i) => (
         <article
           key={service.slug}

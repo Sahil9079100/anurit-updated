@@ -1,9 +1,12 @@
+import Link from "next/link"
+
 interface ServiceCardProps {
   title: string
   description: string
   wave1: string
   wave2: string
   wave3: string
+  href?: string
 }
 
 export default function ServiceCard({
@@ -12,13 +15,14 @@ export default function ServiceCard({
   wave1,
   wave2,
   wave3,
+  href,
 }: ServiceCardProps) {
   return (
-    <div className="relative overflow-hidden rounded-[32px] border border-[rgba(163,163,163,0.27)] bg-[rgba(245,244,240,0.2)] h-[380px] flex flex-col">
-      <p className="relative z-10 font-['Pixelify_Sans:Regular'] font-normal text-[32px] text-black text-center pt-[19px] px-4">
+    <div className="relative overflow-hidden rounded-[32px] md:rounded-[32px] border border-[rgba(163,163,163,0.27)] bg-[rgba(245,244,240,0.2)] h-[230px] md:h-[300px] lg:h-[380px] flex flex-col">
+      <p className="relative z-10 font-['Pixelify_Sans:Regular'] font-normal text-[22px] md:text-[26px] text-black text-left pt-[14px] md:pt-[19px] px-5 md:px-6">
         {title}
       </p>
-      <p className="relative z-10 font-['Plus_Jakarta_Sans:Regular'] font-normal text-[18px] text-black px-7 pt-2 flex-1">
+      <p className="relative z-10 font-['Plus_Jakarta_Sans:Regular'] font-normal text-[14px] md:text-[16px] text-black px-6 md:px-5 pt-1 md:pt-2 flex-1 break-words">
         {description}
       </p>
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -74,11 +78,14 @@ export default function ServiceCard({
           </div>
         </div>
       </div>
-      <div className="relative z-10 mb-[19px] mr-[19px] self-end">
-        <div className="group relative backdrop-blur-md bg-black/60 border border-white/20 h-8 rounded-full px-4 inline-flex items-center justify-center gap-2 cursor-pointer transition-colors duration-300 hover:bg-black/75">
-          <span className="font-['Plus_Jakarta_Sans:Regular'] font-normal text-[14px] leading-none text-white">Explore</span>
-          <span className="font-['Plus_Jakarta_Sans:Regular'] font-normal text-[14px] leading-none text-white transition-transform duration-300 group-hover:translate-x-1">→</span>
-        </div>
+      <div className="relative z-10 mb-[22px] md:mb-[19px] mr-[12px] md:mr-[19px] self-end">
+        <Link
+          href={href ?? "#"}
+          className="group relative inline-flex h-7 md:h-8 items-center justify-center gap-1 md:gap-2 rounded-full border border-white/20 bg-black/60 px-3 md:px-4 backdrop-blur-md -mt-2 md:mt-0 transition-colors duration-300 hover:bg-black/75"
+        >
+          <span className="font-['Plus_Jakarta_Sans:Regular'] font-normal text-[13px] md:text-[14px] leading-none text-white">Explore</span>
+          <span className="font-['Plus_Jakarta_Sans:Regular'] font-normal text-[13px] md:text-[14px] leading-none text-white transition-transform duration-300 group-hover:translate-x-1">→</span>
+        </Link>
       </div>
     </div>
   )

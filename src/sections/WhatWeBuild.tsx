@@ -29,8 +29,9 @@ export default function WhatWeBuild() {
       <p className="font-['Plus_Jakarta_Sans:Regular'] font-normal text-[18px] text-[#474444] text-center mb-10">
         From raw data to intelligent systems
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1320px] mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-5 lg:max-w-[1440px] lg:mx-auto lg:gap-[30px]">
         <ServiceCard
+          href="/service#real-estate-analytics-bi"
           title="Analytics"
           description="Turn property data into decisions."
           wave1={imgVector2}
@@ -38,6 +39,7 @@ export default function WhatWeBuild() {
           wave3={imgVector3}
         />
         <ServiceCard
+          href="/service#data-engineering-cloud"
           title="Data Engineering"
           description="Build the foundation your data depends on."
           wave1={imgVector4}
@@ -45,6 +47,7 @@ export default function WhatWeBuild() {
           wave3={imgVector6}
         />
         <ServiceCard
+          href="/service#ai-intelligent-automation"
           title="AI"
           description="Turn business data into intelligent action."
           wave1={imgVector7}
@@ -52,6 +55,7 @@ export default function WhatWeBuild() {
           wave3={imgVector9}
         />
         <ServiceCard
+          href="/service#power-bi-custom-analytics"
           title="Power BI"
           description="Power BI built around your business."
           wave1={imgVector10}
@@ -59,6 +63,7 @@ export default function WhatWeBuild() {
           wave3={imgVector12}
         />
         <ServiceCard
+          href="/service#custom-software-digital-products"
           title="Software"
           description="Turn business ideas into working products."
           wave1={imgVector13}
@@ -66,6 +71,7 @@ export default function WhatWeBuild() {
           wave3={imgVector15}
         />
         <ServiceCard
+          href="/service#managed-data-analytics-services"
           title="Managed Services"
           description="Keep your data systems running."
           wave1={imgVector16}

@@ -16,7 +16,7 @@ export default function Footer() {
       >
         <img
           alt=""
-          className="absolute max-w-none w-full"
+          className="absolute max-w-none w-full object-cover"
           style={{ height: "160.91%", top: "-60.91%", left: "-0.01%" }}
           src={imgImage12}
         />
@@ -26,7 +26,7 @@ export default function Footer() {
 
       <footer className="absolute bottom-6 left-0 right-0 z-10 w-full px-8">
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 font-['Plus_Jakarta_Sans:Regular'] text-[13px] tracking-wider text-white/95 [text-shadow:0_1px_4px_rgba(0,0,0,0.5)]">
-          <p>© 2026 Anurit Innovation. All rights reserved.</p>
+          <p className="text-center break-words">© 2026 Anurit Innovation. All rights reserved.</p>
           <span aria-hidden="true" className="hidden sm:inline">
             •
           </span>

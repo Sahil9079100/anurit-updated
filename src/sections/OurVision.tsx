@@ -2,14 +2,16 @@ import { imgImageRemovebgPreview1 } from "../assets"
 
 export default function OurVision() {
   return (
-    <section className="relative py-24 overflow-hidden">
-      {/* blur orbs */}
-      <div className="absolute left-[-335px] top-[120px] w-[526px] h-[574px] rounded-[225px] bg-[rgba(130,137,216,0.5)] blur-[22.35px] pointer-events-none" />
-      <div className="absolute left-[-285px] top-[189px] w-[426px] h-[453px] rounded-[192px] bg-[rgba(97,71,213,0.5)] blur-[22.35px] pointer-events-none" />
-      <div className="absolute left-[-237px] top-[235px] w-[345px] h-[363px] rounded-[192px] bg-[rgba(31,67,212,0.5)] blur-[22.35px] pointer-events-none" />
-      <div className="absolute right-[-335px] top-[120px] w-[526px] h-[574px] rounded-[225px] bg-[rgba(130,216,143,0.5)] blur-[22.35px] pointer-events-none" />
-      <div className="absolute right-[-285px] top-[189px] w-[426px] h-[453px] rounded-[192px] bg-[rgba(83,213,71,0.5)] blur-[22.35px] pointer-events-none" />
-      <div className="absolute right-[-237px] top-[235px] w-[345px] h-[363px] rounded-[192px] bg-[rgba(31,212,70,0.5)] blur-[22.35px] pointer-events-none" />
+    <section className="relative py-24 overflow-x-clip">
+      {/* blur orbs — wrapped so they can overlap the next section and stay above it */}
+      <div className="pointer-events-none absolute inset-0 z-[5]">
+      <div className="absolute left-[-120px] md:left-[-220px] top-[205px] md:top-[250px] w-[150px] md:w-[350px] h-[165px] md:h-[380px] rounded-[70px] md:rounded-[155px] bg-[rgba(130,137,216,0.5)] blur-[14px] md:blur-[22.35px]" />
+      <div className="absolute left-[-100px] md:left-[-185px] top-[230px] md:top-[300px] w-[125px] md:w-[285px] h-[130px] md:h-[300px] rounded-[60px] md:rounded-[127px] bg-[rgba(97,71,213,0.5)] blur-[14px] md:blur-[22.35px]" />
+      <div className="absolute left-[-85px] md:left-[-155px] top-[255px] md:top-[340px] w-[100px] md:w-[230px] h-[105px] md:h-[240px] rounded-[55px] md:rounded-[137px] bg-[rgba(31,67,212,0.5)] blur-[14px] md:blur-[22.35px]" />
+      <div className="absolute right-[-120px] md:right-[-220px] top-[205px] md:top-[250px] w-[150px] md:w-[350px] h-[165px] md:h-[380px] rounded-[70px] md:rounded-[155px] bg-[rgba(130,216,143,0.5)] blur-[14px] md:blur-[22.35px]" />
+      <div className="absolute right-[-100px] md:right-[-185px] top-[230px] md:top-[300px] w-[125px] md:w-[285px] h-[130px] md:h-[300px] rounded-[60px] md:rounded-[127px] bg-[rgba(83,213,71,0.5)] blur-[14px] md:blur-[22.35px]" />
+      <div className="absolute right-[-85px] md:right-[-155px] top-[255px] md:top-[340px] w-[100px] md:w-[230px] h-[105px] md:h-[240px] rounded-[55px] md:rounded-[137px] bg-[rgba(31,212,70,0.5)] blur-[14px] md:blur-[22.35px]" />
+      </div>
 
       <div className="relative z-10 max-w-[1600px] mx-auto px-4 lg:px-[24px] text-center">
         <p className="font-['Pixelify_Sans:Regular'] font-normal text-[36px] text-black mb-4">
@@ -28,8 +30,7 @@ export default function OurVision() {
       >
         <img
           alt=""
-          className="w-full h-full object-cover"
-          style={{ transform: "translate(-40px, 0) scale(1.1)" }}
+          className="w-full h-full object-cover scale-[1.18] md:scale-[1.06] translate-x-[-5px] md:translate-x-[-25px]"
           src={imgImageRemovebgPreview1}
         />
       </div>

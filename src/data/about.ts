@@ -131,30 +131,30 @@ export const trustPillars: TrustPillar[] = [
     number: "1",
     title: "Deep Real Estate Domain Mastery",
     description:
-      "We don't just understand data engineering; we speak fluency in property management language. From Yardi schema mapping to complex NOI formulas, lease concessions, and portfolio rollups, our solutions fit your business context immediately without long onboarding curves.",
+      "We speak fluent property-management language — from Yardi schema mapping to NOI formulas, so our solutions fit your business immediately.",
   },
   {
     number: "2",
     title: "Enterprise-Grade Security & Governance",
     description:
-      "Handling sensitive property metrics, resident data, and financial transactions demands stringent security. We design secure, compliant infrastructure (Row-Level Security, private LLMs, and enterprise cloud protocols) ensuring your data remains isolated, safe, and governed.",
+      "We design secure, compliant infrastructure — row-level security, private LLMs, and enterprise cloud protocols — so your data stays isolated and safe.",
   },
   {
     number: "3",
     title: "Agile Execution & Rapid Time-to-Value",
     description:
-      "Large property management organizations need swift solutions. Our agile deployment strategy allows us to deliver quick, high-impact wins — such as real-time dashboards or automated workflows — within weeks rather than months.",
+      "Our agile approach delivers high-impact wins — real-time dashboards or automated workflows — within weeks, not months.",
   },
   {
     number: "4",
     title: "Unifying Fragmented Tech Ecosystems",
     description:
-      "Real estate enterprises often struggle with disparate systems (accounting software, CRM, marketing tools, maintenance trackers). We excel at building seamless integration layers that synthesize disparate property data into a single source of truth.",
+      "We build seamless integration layers that turn disparate property systems into a single source of truth.",
   },
   {
     number: "5",
     title: "Future-Proof Innovation (AI Integration)",
     description:
-      "By actively integrating generative AI and predictive modeling into standard business intelligence setups, we help global property leaders stay far ahead of industry trends, turning static reports into proactive decision engines.",
+      "We embed generative AI and predictive modeling into business intelligence, turning static reports into proactive decision engines.",
   },
 ]
